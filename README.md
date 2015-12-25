@@ -34,6 +34,11 @@ get the comment box:
 <div class="comments">{{ render_disqus_comments() }}</div>
 ```
 
-Optionally the function accepts two arguemnts: `identifier` and
-`url` to override the defaults.  For more information have a look at
-the disqus widget documentation.
+Optionally the function accepts a few arguemnts:
+
+* `identifier` and `url` can be used to forcefully override the automatically
+  detected defaults.
+* `title` can be used to set a title for the discussion that overrides
+  the title that disqus takes from the page's title tag otherwise.
+* `category_id` sets the category id.  Look at the disqus documentation
+  for more information.

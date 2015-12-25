@@ -28,7 +28,8 @@ class DisqusCommentsPlugin(Plugin):
     name = u'Disqus Comments'
     description = u'Adds disqus comments to a website.'
 
-    def get_disqus_config(self, identifier=None, url=None):
+    def get_disqus_config(self, identifier=None, url=None, title=None,
+                          category_id=None):
         configs = []
         ctx = get_ctx()
         if identifier is None:
@@ -45,6 +46,11 @@ class DisqusCommentsPlugin(Plugin):
                 url = None
         if url is not None:
             configs.append('this.page.url = %s;' % htmlsafe_json_dump(url))
+        if title is not None:
+            configs.append('this.page.title = %s;' % htmlsafe_json_dump(title))
+        if category_id is not None:
+            configs.append('this.page.category_id = %s;'
+                           % htmlsafe_json_dump(category_id))
         return ' '.join(configs)
 
     def on_setup_env(self, **extra):

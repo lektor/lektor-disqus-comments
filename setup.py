@@ -5,8 +5,8 @@ setup(
     author='Armin Ronacher',
     author_email='armin.ronacher@active-4.com',
     url='http://github.com/lektor/lektor-disqus-comments',
-    version='0.1',
-    license='MIT',
+    version='0.2',
+    license='BSD',
     py_modules=['lektor_disqus_comments'],
     entry_points={
         'lektor.plugins': [
