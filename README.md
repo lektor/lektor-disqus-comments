@@ -8,9 +8,8 @@ box.
 
 To enable the plugin add this to your project file:
 
-```ini
-[packages]
-lektor-disqus-comments = 0.1
+```shell
+$ lektor plugins add lektor-disqus-comments
 ```
 
 ## Configuring the Plugin
