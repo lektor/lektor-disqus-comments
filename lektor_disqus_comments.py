@@ -26,7 +26,7 @@ SCRIPT = '''
 
 class DisqusCommentsPlugin(Plugin):
     name = u'Disqus Comments'
-    description = u'Adds disqus comments to a website.'
+    description = u'Lektor plugin to add Disqus comments to a website.'
 
     def get_disqus_config(self, identifier=None, url=None, title=None,
                           category_id=None):
