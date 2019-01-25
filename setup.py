@@ -24,7 +24,7 @@ setup(
     name='lektor-disqus-comments',
     py_modules=['lektor_disqus_comments'],
     url='http://github.com/lektor/lektor-disqus-comments',
-    version='0.4',
+    version='0.4.1',
     classifiers=[
         'Environment :: Plugins',
         'Environment :: Web Environment',
